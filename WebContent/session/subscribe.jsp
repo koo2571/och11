@@ -19,8 +19,8 @@
 		MemberDao md = new MemberDao();
 		MemberDto member = new MemberDto();
 		member.setId(id);
-		member.setPassword(password);
-		member.setName(name);
+		member.setPassword(password); 
+		member.setName(name); 
 		int result = md.insert(member);
 		if(result > 0) chk = "success";
 		else chk = "fail";
